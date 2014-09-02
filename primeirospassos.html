@@ -17,100 +17,81 @@
   </head>
   <body>
 		<header>
-				<div id="user"><h4>Bem-vindo(a) - Glivia Barbosa</h4></div>
+				<div id="user"><h4>Bem-vindo(a) - Usuario</h4></div>
 				
-				<div id="icon2"><img src="imagens/conf-icon.png"></div>	
+				<div id="logout">
+					<button>Sair</button>
+				</div>	
 				
 				<div id="logo_small"><img src="imagens/logo2.png"></div>
 		</header>
-		
-		<nav> <div class="header"></div> </nav>			
-		
-		<div id="texto2"> </div>
-		
-		<div id="register_emp">
-			<h3>Primeiros Passos</h3>
-			<div id="info">
-				<p>Glivia Barbosa - Caso deseje vincular-se a uma empresa, selecione-a na lista ao lado.</p>
-				<h6>*A solicitação de vinculo, esta sujeita a aprovação de um administrador desta empresa.</h6>
-				<br>
-				<p> Caso a sua empresa nao esteja cadastrada, preencha o formulario abaixo.</p>
+
+		<div id="primeirospassos"><h3>Primeiros Passos</h3></div>
+
+		<div id="buscando_emp_txt"><h5>Pesquisando por Empresa</h5></div>
+
+		<div id="buscando_emp">
+			<form class="form-search">
+				  <input type="text" class="input-medium search-query">
+				  <button type="submit" class="btn btn-primary">Busca</button>
+			</form>			
+			<div id="info">				
+				<p>Usuario - Caso deseje vincular-se a uma empresa, verifique se ela ja se encontra no sistema no campo de busca ao lado.</p>
 			</div>
-			
-			<div id="filiadas">
-				<form>
-					<select>
-					  <option>Empresas Filiadas</option>
-					  <option>Empresa X</option>
-					  <option>Empresa Y</option>
-					  <option>Empresa Z</option>			  
-					</select>					
-				</form>
+		</div>
+		
+		<div id="solicitando_vinc_txt"><h5>Solicitando Vinculo</h5></div>
+
+		<div id="solicitando_vinc">	
+			<form class="form-search">
+				  <button type="submit" class="btn btn-primary">Solicitar</button>
+				  <button type="submit" class="btn btn-primary">Cancelar</button>
+			</form>				
+			<div id="info">				
+				<p>Usuario A sua empresa foi encontrada no sistema. Deseja solicitar vinculo?</p>		
 			</div>
-			
-			<div id="sv">
-					<a class="btn btn-primary   disabled">Solicitar Vinculo</a>
-					</div>
-			<div id="cadempre">
-			<h3>Cadastro da Empresa no Sistema</h3>
-			</div>
-			
+		</div>
+
+		<div id="cadastrar_emp_txt"><h5>Cadastrar Empresa</h5></div>
+
+		<div id="cadastrar_emp">
+			<div id="gravar">
+							<a href="home.html" class="btn btn-primary">Cadastrar</a>
+							<a class="btn btn-primary">Limpar</a>
+						</div>
 			<div id="form">
 				<form class="form-horizontal">
-						Código
-						<input class="input-small" type="text"  placeholder="Código">
-						Tipo
-						<select>
-							<option>Pessoa Jurídica</option>
-							<option>Pessoa Física</option>								  
-						</select>
-						<br><br>
-						CNPJ
-						<input class="input-large" type="text"  placeholder="CNPJ">										
-						Razão Social
-						<input class="input-medium" type="text"  placeholder="Razão Social">
-						Inscr. Estadual
-						<input class="input-medium" type="text"  placeholder="Inscr. Estadual">
-						<br><br>
-						Nome
-						<input class="input-xxlarge" type="text" placeholder="Nome">					
-						Endereço
-						<input class="input-xxlarge" type="text"  placeholder="Endereço">
-						<br><br>
-						Bairro
-						<input class="input-large" type="text"  placeholder="Bairro">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					
-						UF
-						<select>
+						
+						<input class="input-xlarge" type="text"  placeholder="CNPJ">
+						
+						<input class="input-xxlarge" type="text" placeholder="Nome">
+						<br><br>					
+						
+						<input class="input-large" type="text"  placeholder="Endereço">
+						
+						<input class="input-large" type="text"  placeholder="Bairro">					
+						
+						<select class="input-small">
 							<option>UF</option>
 							<option>MG</option>
 							<option>RJ</option>
 							<option>SP</option>			  
 						</select>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						CEP
-						<input class="input-large" type="text"  placeholder="CEP">					
-						Cidade
-						<input class="input-large" type="text"  placeholder="Cidade">
 						<br><br>
-						Telefone
-						<input class="input-large" type="text"  placeholder="Telefone">
-						&nbsp;&nbsp;&nbsp;
-						Contato
-						<input class="input-large" type="text"  placeholder="Contato">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											
-						<div id="gravar">
-							<a href="home.html" class="btn btn-primary  disabled">Cadastrar Cliente</a>
-						</div>
+						<input class="input-large" type="text"  placeholder="CEP">					
+						
+						<input class="input-large" type="text"  placeholder="Cidade">
+
+						<input class="input-small" type="text"  placeholder="Telefone">
+
 			</div>
-			</div>
-			
+			</div>			
 		</div>		
-		
+			
+		</div>
+
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		
-		<footer><h4>© 2014 EasySystem</h4></footer>
+		</div>
+		<script src="js/bootstrap.min.js"></script>		
   </body>
 </html> 
