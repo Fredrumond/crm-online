@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+	<!-- Titulo no navegador -->
+    <title>Titulo</title>
+    
+	<!--Para aceitar acentuação-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- Meu Layout-->
+	<link rel="stylesheet" type="text/css" href="mycss/style.css"/>
+	
+  </head>
+  <body>
+	
+	
+	<div id="txtcliente">
+		<h3>Clientes</h3>
+	</div>
+	
+				<!--<div id="menucliente">
+					<div id='cssmenu'>
+						<ul>
+						   <li><a href='#'><span>Todos Clientes</span></a></li>
+						   <li><a href='#'><span>Cadastrar Clientes</span></a></li>
+						   <li class='last'><a href='#'><span>Todos Contatos</span></a></li>
+						</ul>
+					</div>
+				</div>-->
+				
+				<div id="ac1">
+					<img src="imagens/add-user-icon.png "
+					onMouseOver="this.src='imagens/add-user-icon2.png'"
+					onMouseOut="this.src='imagens/add-user-icon.png'"
+					onClick="location='cadastrocliente.html'"
+				>
+				</div>
+				<div id="rc1">
+					<img src="imagens/remove-user-icon.png "
+							onMouseOver="this.src='imagens/remove-user-icon2.png'"
+							onMouseOut="this.src='imagens/remove-user-icon.png'" 
+					>
+				</div>
+				
+				<div id="con">
+					<img src="imagens/contact-icon.png "							
+							onMouseOut="this.src='imagens/contact-icon.png'"
+													
+					>
+				</div>
+				
+				<div id="his">
+					<img src="imagens/history-icon.png "
+							onMouseOut="this.src='imagens/history-icon.png'"
+							
+					>
+				</div>
+				
+				<div id="paginas">
+					<p>1,345 Clientes - Página 1 de 67<p>
+					<button type="submit" class="btn">Anterior</button>
+					<button type="submit" class="btn">Proxima</button>
+				</div>
+				
+				<div id="busca2">
+					<form class="form-search">
+					  <input type="text" class="input-large search-query">
+					  <button type="submit" class="btn">Busca</button>
+					</form>
+				</div>
+	
+	
+	<div id="cont">
+			<h3>Cliente 1 </h3>
+		<div id="center">
+			<div id="view">
+			
+				<a href="#myModal" data-toggle="modal"><img src="imagens/view-icon.png"></a>
+				
+				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 id="myModalLabel">Cliente 1</h3>
+				  </div>
+				  <div class="modal-body">
+					<p>Nome: Fulano de tal</p>
+					<p>Endereço: Rua dos antes</p>
+					<p>Telefone: 999-999</p>					
+				  </div>
+				  <div class="modal-footer">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>					
+				  </div>
+			   </div>
+			
+			</div>	
+			
+			<div id="edit"><img src="imagens/edit-icon.png"></div>
+			<div id="remove"><img src="imagens/remove-icon.png"></div>
+		</div>
+	</div>
+	
+	<div id="cont2">
+			<h3>Cliente 2 </h3>
+		<div id="center">
+			<div id="view"><img src="imagens/view-icon.png"></div>
+			<div id="edit"><img src="imagens/edit-icon.png"></div>
+			<div id="remove"><img src="imagens/remove-icon.png"></div>
+		</div>
+	</div>
+	
+		<div id="cont3">
+			<h3>Cliente 3 </h3>
+			<div id="center">
+				<div id="view"><img src="imagens/view-icon.png"></div>
+				<div id="edit"><img src="imagens/edit-icon.png"></div>
+				<div id="remove"><img src="imagens/remove-icon.png"></div>
+			</div>
+		</div>
+		
+				<div id="cont4">
+			<h3>Cliente 4 </h3>
+			<div id="center">
+				<div id="view"><img src="imagens/view-icon.png"></div>
+				<div id="edit"><img src="imagens/edit-icon.png"></div>
+				<div id="remove"><img src="imagens/remove-icon.png"></div>
+			</div>
+		</div>
+		
+	
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<footer><h4>© 2014 EasySystem</h4></footer>
+  </body>
+</html> 

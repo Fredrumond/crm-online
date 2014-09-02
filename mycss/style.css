@@ -1,0 +1,330 @@
+/*Zerar Margem da pagina*/
+*{  margin:0;  padding:0;}
+
+/*Fundo da pagina*/
+body{background:#DCDCDC;}
+
+/*Topo da pagina*/
+header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
+
+/*Logo Grande*/
+#logo_big{
+	position:absolute;	
+	color:#FFA500;
+	width:600px;
+	height:400px;
+	left: 100px;
+	top:50px;	
+	border-radius:5px;
+}
+
+/*HEADER --->INICIO<---*/
+
+	/*Logo Pequena*/
+	#logo_small{
+		position:absolute;	
+		color:#FFA500;
+		width:600px;
+		height:400px;
+		left: 100px;
+		top:15px;	
+		border-radius:5px;
+	}
+
+	#user{position: absolute;top:50%;right:8%;}
+
+	#icon2{position:absolute;top:50%;right:5%;}
+	
+/* ---> FIM <--- */
+
+/*NAVEGADOR --->INICIO<---*/
+
+	nav{	position: absolute;top: 100px;width:100%;}
+
+	.header	{ position:absolut;background:#00afef;width:100%;height:45px;}
+
+	.active	{
+	  -webkit-box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	  -moz-box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	  box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	}
+	.nav{
+	  position:relative;
+	  float:left;
+	  left:5%;
+	}
+	.nav ul li{
+	  list-style-type:none;
+	  position:relative;
+	  float:left;
+	  padding:12px 0px;
+	  height:auto;
+	}
+	.nav ul li a{
+	  font-family: Arial;
+	  font-size:1em;
+	  font-weight:1;
+	  color:#000000;
+	  text-decoration:none;
+	  padding:15px;
+	}
+	.nav ul li a:hover{
+	  color:#DCDCDC;
+	  -webkit-box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	  -moz-box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	  box-shadow: inset 0px -4px 0px 0px #F5F5F5;
+	}
+
+/* ---> FIM <--- */
+
+/*Rodape da pagina*/
+footer{position: absolute;right:1%;top:93%;}
+
+/*Caixa de acesso --->INICIO<---*/
+	#access{
+		position: absolute;
+		width: 550px;
+		top:80px;
+		right: 70px;
+		height:15%;		
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;
+	}
+
+	#login{position: absolute;top: 30%;right:15%;}
+
+	#log_btn{position:absolute;top:31%;right: 3%;}
+
+	#forgotpass{position:absolute;right: 15%;top: 32px;}
+
+	#forgotpass a{color:#000;}
+/* ---> FIM <--- */
+
+/*Descrição easyCRM*/
+#description{position: absolute;width:600px;height:400px;left: 100px;top: 250px;text-align:justify;}
+
+/*Imagem depois do texto */
+#imgcrm{position: absolute;width: 209px;height:200px;top: 400px;left: 280px;}
+
+/*Cadastrando --->INICIO<---*/
+	#register{
+		position:absolute;
+		color:#000;
+		width:550px;
+		height:400px;
+		right: 70px;
+		top: 200px;
+		text-align:center;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;
+	}
+
+	#form_begin{position: absolute;top:50px;right:10%;}
+
+	#dados{	position:absolute;left: 5%;top:48px;text-align:justify;}
+
+	#fin_reg{position:absolute;top:93%;right: 1%;}
+
+/* ---> FIM <--- */
+
+/*Tela RECUPERAR SENHA --->INICIO<---*/
+
+	#recover{
+		position:absolute;
+		color:#000;
+		width:500px;
+		height:200px;
+		left: 30%;
+		top: 310px;
+		text-align:center;
+		border-width:2px;
+		/*border-style:dashed;*/
+		border-color:#00afef;
+		border-radius: 5px;
+	}
+		
+/* ---> FIM <--- */
+
+/*Tela PRIMEIROS PASSOS --->INICIO<---*/
+	#register_emp{
+		position:absolute;
+		color:#000;
+		width:1220px;
+		height:460px;
+		left: 70px;
+		top: 150px;
+		text-align:center;
+		border-width:2px;
+		border-style:dashed;
+		border-color:#00afef;
+		border-radius: 5px;
+	}
+
+	#register_emp h3{position: absolute;left:10px;}
+	
+	#info{position: absolute;top:50px;left:10px;text-align:left;font-size:16px;}
+
+	#filiadas{position: absolute;top:10px;right:12%;}
+
+	#cadempre h3{position: absolute;top:90px;left:10px;}
+
+	#form{position: absolute;top:200px;left:10px;text-align:left;}
+
+	#gravar{position:absolute;top:85%;right: 1%;}
+
+/*Tela HOME --->INICIO<---*/
+
+	#dash{position: absolute;top:200px;left:200px;}
+
+/* ---> FIM <--- */
+
+/*Tela AGENDA --->INICIO<---*/
+
+	#txt_notpen{position: absolute;top:160px;left:370px;}
+
+	#bus1_agenda{position: absolute;top:180px;left:780px;}
+
+	#table_notifi{position: absolute;top:230px;left:370px;;width:700px;height: 400px;}		
+
+	#txt_liseven{position: absolute;top:420px;left:370px;}
+
+	#bus2_agenda{position: absolute;top:440px;left:780px;}
+
+	#table_event{position: absolute;top:490px;left:370px;width:700px;height: 400px;}
+
+	#addevent{position: absolute;top: 170px;left:20px;width: 290px;height: 380px;background:#00afef;text-align:center;border-radius:5px;}	
+
+/* ---> FIM <--- */
+
+/*Tela CLIENTE --->INICIO<---*/
+
+	#txt_cliente{position: absolute;top:160px;left:37px;}
+
+	#add_cli{position: absolute;top:220px;left:30px;}
+	
+	#rem_cli{position: absolute;top:220px;left:100px;}
+
+	#num_pag{position: absolute;top:230px;right:110px;}
+
+	#bus_cliente{position: absolute;top:200px;right:30px;}
+
+	#cont{position: absolute;background: #00afef;top:300px;width: 300px;height:130px;left:25px;text-align:center;border-radius:5px;}
+
+	#center{position:absolute;top:-10px;left:13%;}
+
+	#view{position:absolute;top:80px;left:30px;}
+
+	#edit{position:absolute;top:97px;left:100px;}
+
+	#remove{position:absolute;top:95px;left:150px;}
+
+	#cont2{	position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;left:370px;text-align:center;border-radius:5px;}
+
+	#cont3{ position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;left:695px;text-align:center;border-radius:5px;}
+
+	#cont4{	position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;right:25px;text-align:center;border-radius:5px;}
+
+/* ---> FIM <--- */
+
+/*Tela EXIBIÇÃO --->INICIO<---*/
+	#his_icon{position: absolute;top:10px;left:30px;}
+
+	#lem_icon{position: absolute;top:10px;left:100px;}
+
+	#form_view{position: absolute;top:100px;left:10px;text-align:left;}
+
+/* ---> FIM <--- */
+
+/*Tela RELATORIOS --->INICIO<---*/
+
+	#txt_relatorio{position: absolute;top:150px;left:70px;}
+
+	#menucliente{position: absolute;left:47px;top:200px;}
+
+	#cssmenu {/*background: #00afef;*/list-style: none;margin: 0;padding: 0;width: 20em;}
+	
+	#cssmenu li {
+	  font: 100.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+	#cssmenu a {
+	  background: #00afef;
+	  border-bottom: 1px solid #393939;
+	  color: #black;
+	  display: block;
+	  margin: 0;
+	  padding: 8px 12px;
+	  text-decoration: none;
+	  font-weight: normal;
+	}
+	#cssmenu a:hover {
+	  background: #00afef;
+	  color: #black;
+	  padding-bottom: 8px;
+	}
+
+	#filtro{position: absolute;top:200px;left:350px;}
+
+	#relatorio{position:absolute;color:#000;width:1220px;height:330px;left: 70px;top: 290px;text-align:center;}
+
+	#grafico{position:absolute;top:5px;left:13%;}
+
+/* ---> FIM <--- */
+
+/*Tela USUARIOS --->INICIO<---*/
+
+#add_user{position: absolute;top:180px;left:70px;}
+
+#rem_user{position: absolute;top:180px;left:140px;}
+
+#txt_usuarios{position: absolute;top:250px;left:70px;}
+
+#bus_user{position: absolute;top:267px;right:100px;}
+
+#table_user{position: absolute;top:300px;left:70px;width:1200px;height: 230px;border-width:2px;border-style:solid;border-color:#00afef;}
+
+/* ---> FIM <---*/ 
+
+/*Tela CADASTRAR USUARIOS --->INICIO<---*/
+	#register_user{
+		position:absolute;
+		color:#000;
+		width:1220px;
+		height:425px;
+		left: 70px;
+		top: 180px;
+		text-align:center;
+		border-width:2px;
+		border-style:dashed;
+		border-color:#00afef;
+		border-radius: 5px;
+	}	
+
+	#form_cad_user{position: absolute;top:60px;left:35%;text-align:left;}
+
+	#txt_cad_user{position: absolute;top:130px;left:70px;}
+	
+/* ---> FIM <---*/ 
+
+/*Tela HISTORICO E VISITA --->INICIO<---*/
+#voltar{position: absolute;top:230px;left:70px;}
+
+#addevent2
+{
+	position: absolute;
+	top: 170px;
+	left:25%;
+	width: 700px;
+	height: 505px;
+	background:#00afef;
+	text-align:center;
+	border-radius:5px;
+}
+
+/* ---> FIM <---*/ 

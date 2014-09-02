@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+	<!-- Titulo no navegador -->
+    <title>Relatório</title>
+    
+	<!--Para aceitar acentuação-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- Meu Layout-->
+	<link rel="stylesheet" type="text/css" href="mycss/style.css"/>
+	
+  </head>
+  <body>
+	<header>
+		<div id="user"><h4>Bem-vindo(a) - Glivia Barbosa</h4></div>
+		<div id="icon2"><img src="imagens/conf-icon.png"></div>
+		<div id="logo_small"><img src="imagens/logo2.png"></div>			
+	</header>	
+		
+	<nav>
+		<div class="header">	  
+			<div class="nav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="agenda.html">Agenda</a></li>
+					<li><a href="cliente.html">Clientes</a></li>
+					<li><a class="active" href="relatorio.html">Relatórios</a></li>
+					<li><a href="usuario.html">Usuários</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="txt_relatorio"><h3>Relatórios</h3></div>
+				
+	<div id="menucliente">
+		<div id='cssmenu'>
+			<ul>
+				<li><a href='#'><span>Por Cliente</span></a></li>
+				<li><a href='#'><span>Por Usuário</span></a></li>
+			</ul>
+		</div>
+	</div>
+				
+	<div id="filtro">
+		<form>
+			Data início:
+			<input class="input-large" type="text"  placeholder="Data">
+			Data fim:
+			<input class="input-large" type="text"  placeholder="Data">
+			<select>
+				<option>Por Usuário</option>
+				<option>Davi SIlva</option>
+				<option>Eduardo Melo</option>						  		  
+			</select>
+			<a class="btn btn-small btn-primary  disabled">Filtrar</a>
+		</form>
+	</div>				
+				
+	<div id="relatorio">
+		<div id="grafico"><img src="imagens/crm_fidelidade.png "></div>
+	</div>
+	
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<footer><h4>© 2014 EasySystem</h4></footer>
+  </body>
+</html> 

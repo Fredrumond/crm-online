@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+	<!-- Titulo no navegador -->
+    <title>lembrete</title>
+    
+	<!--Para aceitar acentuação-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- Meu Layout-->
+	<link rel="stylesheet" type="text/css" href="mycss/style.css"/>
+	
+  </head>
+  <body>
+	<header>
+		<div id="user"><h4>Bem-vindo(a) - Glivia Barbosa</h4></div>
+		<div id="icon2"><img src="imagens/conf-icon.png"></div>
+		<div id="logo_small"><img src="imagens/logo2.png"></div>			
+	</header>	
+		
+	<nav>
+		<div class="header">	  
+			<div class="nav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="agenda.html">Agenda</a></li>
+					<li><a href="cliente.html">Clientes</a></li>
+					<li><a href="relatorio.html">Relatórios</a></li>
+					<li><a href="usuario.html">Usuários</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="voltar">
+		<img src="imagens/back-icon.png "
+		onClick="location='exibicao.html'"
+		>
+	</div>
+	
+	<div id="addevent2">
+		<h3>Adicionar Evento</h3>
+			
+		<div id="formulario">
+			<form class="form-inline">
+				<br>
+				<input class="input-xxlarge" type="text" placeholder="Mudança de responsável">					
+				<br><br>
+				<input class="input-xxlarge" type="text"  placeholder="23/05/2014">
+				<br><br>
+				<input class="input-xxlarge" type="text"  placeholder="12:55">
+				<br><br>
+				<select>
+					<option>Convidar Funcionario</option>
+					<option>Eduardo Melo</option>
+					<option>Davi Silva</option>					 			  
+				</select>
+				<button class="btn" type="submit" >Convidar</button>				    
+				<input class="input-large" type="text"  placeholder="Eduardo Melo">
+				<br><br>
+				<input class="input-xlarge" type="text"  placeholder="Proposta.pdf">
+				<button class="btn" type="submit" >Anexar</button>
+				<br><br>
+				<textarea  rows=6 cols=10  placeholder="Mudança de responsável para fechamento de pedido. Eduardo solicitou que eu assumisse daqui 
+														enviando proposta para o cliente e fazendo os contatos de fechamento" ></textarea>
+				<br><br>
+				<a href="agenda.html" class="btn    disabled">Agendar</a>
+			</form>
+		</div>			
+	</div>	
+	
+	<footer><h4>© 2014 EasySystem</h4></footer>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html> 

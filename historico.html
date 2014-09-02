@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+	<!-- Titulo no navegador -->
+    <title>Histórico</title>
+    
+	<!--Para aceitar acentuação-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- Meu Layout-->
+	<link rel="stylesheet" type="text/css" href="mycss/style.css"/>
+	
+  </head>
+  <body>
+	<header>
+		<div id="user"><h4>Bem-vindo(a) - Glivia Barbosa</h4></div>
+		<div id="icon2"><img src="imagens/conf-icon.png"></div>
+		<div id="logo_small"><img src="imagens/logo2.png"></div>			
+	</header>	
+		
+	<nav>
+		<div class="header">	  
+			<div class="nav">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="agenda.html">Agenda</a></li>
+					<li><a href="cliente.html">Clientes</a></li>
+					<li><a href="relatorio.html">Relatórios</a></li>
+					<li><a href="usuario.html">Usuários</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="historico">
+		<div id="texto6"><h3>Histórico</h3></div>
+				
+		<div id="voltar">
+			<img src="imagens/back-icon.png "
+			onClick="location='exibicao.html'"
+			>
+		</div>
+				
+		<div id="bus_user">
+			<form class="form-search">
+				<input type="text" class="input-large search-query">
+				<button type="submit" class="btn btn-primary">Busca</button>
+			</form>
+		</div>
+		
+		<div id="table_user">
+			<table class="table"> <!-- Inicia a tabela e coloca uma borda de espessura igual a 1-->
+					
+				<tr bgcolor="#00afef">
+					<td>Título </td>
+					<td>Vendedor </td>
+					<td>Data</td>
+					<td>Hora</td>
+					<td>Descrição</td>		
+					<td>Anexo</td>
+				</tr>			
+					
+				<tr bgcolor="#DCDCDC">
+					<td>Vendedor Responsável</td>
+					<td>Eduardo Melo</td>						
+					<td>15/05/2014</td>
+					<td>09:15</td>
+					<td>Registro automático do sistema</td>
+					<td></td>
+				<tr>
+					
+				<tr bgcolor="#ffffff">
+					<td>Reunião</td>
+					<td>Eduardo Melo</td>						
+					<td>17/05/2014</td>
+					<td>15:45</td>
+					<td>Levantar requisitos CRM.</td>
+					<td></td>
+				<tr>
+					
+				<tr bgcolor="#DCDCDC">
+					<td>Ligação</td>
+					<td>Eduardo Melo</td>						
+					<td>19/05/2014</td>
+					<td>09:15</td>
+					<td>Ajustar pendencias do sistema</td>
+					<td></td>
+				<tr>
+					
+				<tr bgcolor="#ffffff">
+					<td>Visita</td>
+					<td>Eduardo Melo</td>						
+					<td>20/05/2014</td>
+					<td>16:15</td>
+					<td>Procurar por Glivia</td>
+					<td></td>
+				<tr>
+					
+				<tr bgcolor="#DCDCDC">
+					<td>Alteração de vendedor responsável</td>
+					<td>Eduardo Melo</td>						
+					<td>20/05/2014</td>
+					<td>17:15</td>
+					<td>Salvo por Eduardo Melo</td>
+					<td></td>
+				<tr>
+					
+				<tr bgcolor="#ffffff">
+					<td><a href="visita.html">Envio de proposta e Negociação</a></td>
+					<td>Davi Silva</td>						
+					<td>22	/05/2014</td>
+					<td>12:55</td>
+					<td>Mudança de responsável para fechamento de pedido.</td>
+					<td>X</td>
+				<tr>
+					
+			</table>
+		</div>
+	</div>
+	
+	<footer><h4>© 2014 EasySystem</h4></footer>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html> 
