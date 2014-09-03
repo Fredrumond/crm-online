@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  
+	<!-- Titulo no navegador -->
+    <title>Atividades</title>
+    
+	<!--Para aceitar acentuação-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- Meu Layout-->
+	<link rel="stylesheet" type="text/css" href="mycss/style.css"/>
+	
+  </head>
+  <body>
+		<header>
+			<div id="user"><h4>Bem-vindo(a) - Usuario</h4></div>
+				
+				<div id="logout">
+					<i class="icon-certificate"></i>
+				</div>	
+				
+				<div id="logo_small"><img src="imagens/logo2.png"></div>			
+		</header>	
+		
+		<nav>
+			<div class="header">	  
+				<div class="nav">
+					<ul>
+					  <li><a href="lembrete.html">Lembrete</a></li>
+					  <li><a class="active" href="atividades.html">Atividades</a></li>
+					  <li><a href="atendimento.html">Atendimento</a></li>
+					  <li>
+					  	<a class=href="#">Cadastro</a>
+					  	<ul>
+					  		<li><a href="cadastrarcliente.html">Cliente</a></li>
+					  	</ul>
+					  </li>
+					  <li>
+					  	<a href="#">Gestao</a>
+						<ul>
+					  		<li><a href="gestaodefuncionario.hmtl">Funcionario</a></li>
+					  		<li><a href="gestaodeempresa.html">Empresa</a></li>
+					  	</ul>
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+				
+		<div id="table_notifi">
+			<table class="table"> <!-- Inicia a tabela e coloca uma borda de espessura igual a 1-->
+					
+				<tr bgcolor="#00afef">
+					<td>Título </td>
+					<td>Horario</td>
+					<td>Descrição</td>
+					
+				</tr>			
+					
+				<tr class="success"> 
+					<td> </td>
+					<td> </td>
+					<td>Descrição....</td>
+					
+				<tr>
+					
+				<tr class="error"> 
+					<td> </td>
+					<td> </td>
+					<td>Descrição....</td>
+				<tr>
+			</table>
+			</div>
+			
+			<div id="bus1_agenda">
+				<form class="form-search">
+					<input type="text" class="input-large search-query" placeholder="Busca data">
+					<button type="submit" class="btn-primary">Busca</button>
+				</form>
+			</div>
+
+			<div id="txt_notpen"><h3>Lista de Atividades</h3></div>
+		</div>		
+		
+		<div id="addevent">
+			<h3>Atividades</h3>
+			
+			<div id="formulario">
+				<form class="form-inline">					
+					<input class="input-large" type="text"  placeholder="Titulo">
+					<br><br>					
+					<input class="input-large" type="text"  placeholder="Data">
+					<br><br>
+					<input class="input-large" type="text"  placeholder="Horario">
+					
+					<br><br>
+					<textarea rows="4" placeholder="Informação sobre o atendimento" ></textarea>
+					<br><br>					
+					<button class="btn btn-primary" type="submit" >Salvar</button>
+				</form>
+			</div>			
+		</div>
+
+		<form id="con_can">
+			<button class="btn btn-primary" type="submit" >Editar</button>
+			<button class="btn btn-primary" type="submit" >Cancelar</button>
+			<button class="btn btn-primary" type="submit" >Excluir</button>
+			<button class="btn btn-primary" type="submit" >Salvar</button>
+		</form>
+		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		
+  </body>
+</html> 

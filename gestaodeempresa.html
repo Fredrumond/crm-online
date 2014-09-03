@@ -3,7 +3,7 @@
   <head>
   
 	<!-- Titulo no navegador -->
-    <title>Home</title>
+    <title>Gestão de Empresa</title>
     
 	<!--Para aceitar acentuação-->
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -20,7 +20,7 @@
 			<div id="user"><h4>Bem-vindo(a) - Usuario</h4></div>
 				
 				<div id="logout">
-					<button>Sair</button>
+					<i class="icon-certificate"></i>
 				</div>	
 				
 				<div id="logo_small"><img src="imagens/logo2.png"></div>			
@@ -30,21 +30,32 @@
 			<div class="header">	  
 				<div class="nav">
 					<ul>
-					  <li><a class="active" href="home.html">Home</a></li>
-					  <li><a href="agenda.html">Agenda</a></li>
-					  <li><a href="cliente.html">Clientes</a></li>
-					  <li><a href="relatorio.html">Relatórios</a></li>
-					  <li><a href="usuario.html">Usuários</a></li>
+					  <li><a href="lembrete.html">Lembrete</a></li>
+					  <li><a href="atividades.html">Atividades</a></li>
+					  <li><a href="atendimento.html">Atendimento</a></li>
+					  <li>
+					  	<a  href="#">Cadastro</a>
+					  	<ul>
+					  		<li><a href="cadastrarcliente.html">Cliente</a></li>
+					  	</ul>
+					  </li>
+					  <li>
+					  	<a class="active" href="#">Gestao</a>
+						<ul>
+					  		<li><a href="gestaodefuncionario.hmtl">Funcionario</a></li>
+					  		<li><a href="gestaodeempresa.html">Empresa</a></li>
+					  	</ul>
+					  </li>
 					</ul>
 				</div>
 			</div>
 		</nav>	
 		
-		<div id="dash"><img src="imagens/dashboard.png"/></div>		
+			
 		
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
-		<footer><h4>© 2014 EasySystem</h4></footer>
+		
   </body>
 </html> 
