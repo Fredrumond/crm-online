@@ -1,59 +1,21 @@
 /*Zerar Margem da pagina*/
-*{  margin:0;  padding:0;}
+	*{
+		margin:0;
+	  	padding:0;
+	  }
 
-/*Fundo da pagina*/
-body{background:#F5F5F5;;}
-
-/*Topo da pagina*/
-header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
-
-/*LOGIN --->INICIO<---*/
-
-	/*Logo Pequena*/
-	#logo_small2{
-		position:absolute;		
-		left: 42%;
-		top:10%;	
-		
-	}
-	
-	#box_login{
-		position:absolute;
-		background-color: #00afef;		
-		width:500px;
-		height:300px;
-		top:25%;
-		left: 30%;
-		border-radius:5px;
+/*Fundo da pagina*/ 
+	body{
+		background:#F5F5F5;
 	}
 
-	#box_login form{
+/*Topo da pagina*/ 
+	header{	
 		position: absolute;
-		top: 40px;
-		right:100px;
+		width: 100%;
+		height:15%;
+		background:#F5F5F5;
 	}
-
-	#forgotpass{position:absolute;right:140px;top: 150px;}
-
-	#forgotpass a{color:#000;}	
-/* ---> FIM <--- */
-
-/*Tela RECUPERAR SENHA --->INICIO<---*/
-
-	#recover{
-		position:absolute;
-		color:#000;
-		width:500px;
-		height:200px;
-		left: 30%;
-		top: 310px;
-		text-align:center;
-		border-width:2px;
-		/*border-style:dashed;*/
-		border-color:#00afef;
-		border-radius: 5px;
-	}		
-/* ---> FIM <--- */
 
 /*HEADER --->INICIO<---*/
 
@@ -71,7 +33,6 @@ header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
 	#user{position: absolute;top:40%;right:8%;}
 
 	#logout{position:absolute;top:50%;right:5%;}	
-/* ---> FIM <--- */
 
 /*NAVEGADOR --->INICIO<---*/
 
@@ -119,120 +80,170 @@ header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
 				text-align: left;
 				background: #00afef;
 			}
-/* ---> FIM <--- */
+
+/*Tela LOGIN --->INICIO<---*/
+
+	/*Logo Pequena*/
+	#logo_login{position:absolute;left: 42%;top:10%;}
+	
+	#box_login{
+		position:absolute;
+		background-color: #00afef;		
+		width:500px;
+		height:300px;
+		top:25%;
+		left: 30%;
+		border-radius:5px;
+	}
+
+	#box_login form{
+		position: absolute;
+		top: 40px;
+		right:100px;
+	}
+
+	#forgotpass{position:absolute;right:140px;top: 150px;}
+
+	#forgotpass a{color:#000;}	
+
+/* Tela RECUPERAR SENHA --->INICIO<---*/
+
+	#recover{
+		position:absolute;
+		color:#000;
+		width:500px;
+		height:200px;
+		left: 30%;
+		top: 310px;
+		text-align:center;
+		border-width:2px;
+		/*border-style:dashed;*/
+		border-color:#00afef;
+		border-radius: 5px;
+	}		
 
 /*Tela CADASTRO --->INICIO<---*/
 
-	#cadastrando{
-		position:absolute;		
-		width:100%;
-		height:45px;
-		top:95px;
-		background-color: #00afef;
-	}
-	#cadastrando h3{
-		position: absolute;
-		left:120px;
-	}
+	/*Topo da pagina de cadastro*/
+		#cadastrando{
+			position:absolute;		
+			width:100%;
+			height:45px;
+			top:95px;
+			background-color: #00afef;
+		}
+		#cadastrando h3{
+			position: absolute;
+			left:120px;
+		}
+	/*fim*/
 
-	#cadastrar_txt{
-		position: absolute;
-		top:150px;
-		left:80px;
-	}	
+	/*Aba Dados*/
+		#cadastrar_txt{
+			position: absolute;
+			top:150px;
+			left:80px;
+		}	
 
-	#cadastrar{
-		position:absolute;		
-		width:1220px;
-		height:250px;
-		left: 70px;
-		top: 180px;
-		text-align:center;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;
-	}
+		#box_cadastrar{
+			position:absolute;		
+			width:1220px;
+			height:250px;
+			left: 70px;
+			top: 180px;
+			text-align:center;
+			border-width:2px;
+			border-style:solid;
+			border-color:#00afef;
+			border-radius: 5px;
+		}
+	/*fim*/
 
-	#buscando_emp_txt{
-		position: absolute;
-		top:450px;
-		left:80px;
-	}
+	/*Aba Buscar Empresa*/
+		#buscando_emp_txt{
+			position: absolute;
+			top:450px;
+			left:80px;
+		}
 
-	#buscando_emp{
-		position:absolute;		
-		width:1220px;
-		height:50px;
-		left: 70px;
-		top: 480px;
-		text-align:center;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;
-	}	
-	
-	#buscando_emp form{
-		position: absolute;
-		right: 10px;	
-	}
+		#box_buscando_emp{
+			position:absolute;		
+			width:1220px;
+			height:50px;
+			left: 70px;
+			top: 480px;
+			text-align:center;
+			border-width:2px;
+			border-style:solid;
+			border-color:#00afef;
+			border-radius: 5px;
+		}	
+		
+		#buscando_emp form{
+			position: absolute;
+			right: 100px;	
+		}
 
-	#buscando_emp h5{
-		position: absolute;
-		left:120px;
-	}
-	
-	#info{position: absolute;top:10px;left:10px;text-align:left;font-size:16px;}
+		#buscando_emp h5{
+			position: absolute;
+			left:120px;
+		}
 
-	#solicitando_vinc_txt{
-		position: absolute;
-		top:550px;
-		left:80px;
-	}
+		#info{position: absolute;top:10px;left:10px;text-align:left;font-size:16px;}
+	/*fim*/
 
-	#solicitando_vinc{
-		position:absolute;		
-		width:1220px;
-		height:50px;
-		left: 70px;
-		top: 580px;
-		text-align:center;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;
-	}
+	/*Aba Solicitação Vinculo*/
+		#solicitando_vinc_txt{
+			position: absolute;
+			top:550px;
+			left:80px;
+		}
 
-	#solicitando_vinc form{
-		position: absolute;
-		right:10px;
-		top: 10px;
-	}
+		#solicitando_vinc{
+			position:absolute;		
+			width:1220px;
+			height:50px;
+			left: 70px;
+			top: 580px;
+			text-align:center;
+			border-width:2px;
+			border-style:solid;
+			border-color:#00afef;
+			border-radius: 5px;
+		}
 
-	#cadastrar_emp_txt{
-		position: absolute;
-		top:650px;
-		left:80px;
-	}	
+		#solicitando_vinc form{
+			position: absolute;
+			right:10px;
+			top: 10px;
+		}
+	/*fim*/
 
-	#cadastrar_emp{
-		position:absolute;		
-		width:1220px;
-		height:150px;
-		left: 70px;
-		top: 680px;
-		text-align:center;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;
-	}
+	/*Aba Cadastrar Empresa*/
+		#cadastrar_emp_txt{
+			position: absolute;
+			top:650px;
+			left:80px;
+		}	
 
-	#form{position: absolute;top:10px;left:10px;text-align:left;}
+		#cadastrar_emp{
+			position:absolute;		
+			width:1220px;
+			height:150px;
+			left: 70px;
+			top: 680px;
+			text-align:center;
+			border-width:2px;
+			border-style:solid;
+			border-color:#00afef;
+			border-radius: 5px;
+		}
 
-	#gravar{position:absolute;right:10px;top:110px;}
-	
+		#form{position: absolute;top:10px;left:10px;text-align:left;}
+
+		#gravar{position:absolute;right:10px;top:110px;}
+	/*fim*/
+
 /*Tela LEMBRETE --->INICIO<---*/
 
 		#table_lembre{
@@ -270,15 +281,13 @@ header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
 			right: 100px;
 		}
 
-/* ---> FIM <-- */
+/*Tela ATIVIDADES --->INICIO<---*/
 
-/*Tela AGENDA --->INICIO<---*/
+	#txt_atividades{position: absolute;top:160px;left:370px;}
 
-	#txt_notpen{position: absolute;top:160px;left:370px;}
+	#busca_atividades{position: absolute;top:180px;left:780px;}	
 
-	#bus1_agenda{position: absolute;top:180px;left:780px;}
-
-	#table_notifi{
+	#table_atividades{
 		position: absolute;
 		top:230px;
 		left:370px;
@@ -287,55 +296,91 @@ header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
 		border-width:2px;
 		border-style:solid;
 		border-color:#00afef;
-		border-radius: 5px;}		
+		border-radius: 5px;
+	}		
 
-	#txt_liseven{position: absolute;top:420px;left:370px;}
+	#add_atividades{
+		position: absolute;
+		top: 170px;
+		left:20px;
+		width: 290px;
+		height: 480px;
+		background:#00afef;
+		text-align:center;
+		border-radius:5px;}
 
-	#bus2_agenda{position: absolute;top:440px;left:780px;}
-
-	#table_event{position: absolute;top:490px;left:370px;width:700px;height: 400px;}
-
-	#addevent{position: absolute;top: 170px;left:20px;width: 290px;height: 480px;background:#00afef;text-align:center;border-radius:5px;}
-
-	#con_can{
+	#btn_atividades{
 		position: absolute;
 		top: 100%;
 		right: 300px;
-	}	
+	}
 
-/* ---> FIM <--- */
+/*Tela CADASTRO CLIENTES -->INICIO<---*/
 
-/*Tela CLIENTE --->INICIO<---*/
+/*Tela GESTÃO FUNCIONARIOS --->INICIO<---*/
 
-	#txt_cliente{position: absolute;top:160px;left:37px;}
-
-	#add_cli{position: absolute;top:220px;left:30px;}
+	#txt_notpen{position: absolute;top:160px;left:100px;}
 	
-	#rem_cli{position: absolute;top:220px;left:100px;}
+	#busa_not{position: absolute;top:180px;right:150px;}
 
-	#num_pag{position: absolute;top:230px;right:110px;}
+	#table_notifi{
+		position: absolute;
+		top:230px;
+		left:100px;
+		width:1150px;
+		height: 150px;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;}
 
-	#bus_cliente{position: absolute;top:200px;right:30px;}
+	#view_func{
+		position:absolute;		
+		width:1150px;
+		height:350px;
+		left: 100px;
+		top: 430px;
+		text-align:center;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;
+	}
 
-	#cont{position: absolute;background: #00afef;top:300px;width: 300px;height:130px;left:25px;text-align:center;border-radius:5px;}
+	#table_acesso{
+		position: absolute;
+		top:180px;
+		left:50px;
+		width:200px;
+		height: 160px;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;}
 
-	#center{position:absolute;top:-10px;left:13%;}
+	#table_cargo{
+		position: absolute;
+		top:180px;
+		left:350px;
+		width:200px;
+		height: 160px;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;}
 
-	#view{position:absolute;top:80px;left:30px;}
+	#table_cli_vin{
+		position: absolute;
+		top:180px;
+		left:650px;
+		width:200px;
+		height: 160px;
+		border-width:2px;
+		border-style:solid;
+		border-color:#00afef;
+		border-radius: 5px;}
 
-	#edit{position:absolute;top:97px;left:100px;}
-
-	#remove{position:absolute;top:95px;left:150px;}
-
-	#cont2{	position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;left:370px;text-align:center;border-radius:5px;}
-
-	#cont3{ position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;left:695px;text-align:center;border-radius:5px;}
-
-	#cont4{	position: absolute;	background: #00afef;top:300px;width: 300px;height:130px;right:25px;text-align:center;border-radius:5px;}
-
-/* ---> FIM <--- */
-
-/*Tela Gestão da Empresa --->INICIO<---*/
+/*Tela GESTÃO EMPRESA --->INICIO<---*/
 
 	#gestao_emp_txt{position: absolute;top:140px;left:70px;}
 
@@ -358,70 +403,3 @@ header{	position: absolute;	width: 100%;height:15%;background:#F5F5F5;}
 		top: 100px;
 		right: 170px;
 	}
-
-/* ---> FIM <--- */
-
-/*Tela Gestão da Empresa --->INICIO<---*/
-
-	#table_notifi2{
-		position: absolute;
-		top:230px;
-		left:100px;
-		width:1150px;
-		height: 150px;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;}
-
-	#txt_notpen2{position: absolute;top:160px;left:100px;}
-
-	#bus1_agenda2{position: absolute;top:180px;right:150px;}
-
-	#cadastrar2{
-		position:absolute;		
-		width:1150px;
-		height:350px;
-		left: 100px;
-		top: 430px;
-		text-align:center;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;
-	}
-
-	#table_lembre2{
-		position: absolute;
-		top:180px;
-		left:50px;
-		width:200px;
-		height: 160px;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;}
-
-	#table_lembre3{
-		position: absolute;
-		top:180px;
-		left:350px;
-		width:200px;
-		height: 160px;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;}
-
-	#table_lembre4{
-		position: absolute;
-		top:180px;
-		left:650px;
-		width:200px;
-		height: 160px;
-		border-width:2px;
-		border-style:solid;
-		border-color:#00afef;
-		border-radius: 5px;}
-
-/* ---> FIM <--- */
