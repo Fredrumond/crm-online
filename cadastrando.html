@@ -75,12 +75,14 @@
 		<div id="buscando_emp_txt"><h5>Pesquisando por Empresa</h5></div>
 
 		<div id="box_buscando_emp">
-			<form class="form-search">
-				  <input type="text" class="input-medium search-query">
-				  <button type="submit" class="btn btn-primary">Busca</button>
-			</form>			
+			<div id="buscando_emp_form">
+				<form class="form-search">
+					  <input type="text" class="input-medium search-query">
+					  <button type="submit" class="btn btn-primary">Busca</button>
+				</form>
+			</div>			
 			<div id="info">				
-				<p>Usuario - Caso deseje vincular-se a uma empresa, verifique se ela ja se encontra no sistema no campo de busca ao lado.</p>
+				<p>Caso deseje vincular-se a uma empresa, verifique se ela ja se encontra no sistema no campo de busca ao lado.</p>
 			</div>
 		</div>
 		
@@ -92,7 +94,7 @@
 				  <button type="submit" class="btn btn-primary">Cancelar</button>
 			</form>				
 			<div id="info">				
-				<p>Usuario A sua empresa foi encontrada no sistema. Deseja solicitar vinculo?</p>		
+				<p>A sua empresa foi encontrada no sistema. Deseja solicitar vinculo?</p>		
 			</div>
 		</div>
 
@@ -113,20 +115,21 @@
 						
 						<input class="input-large" type="text"  placeholder="Endereço">
 						
-						<input class="input-large" type="text"  placeholder="Bairro">					
+						<input class="input-large" type="text"  placeholder="Bairro">
+
+						<input class="input-small" type="text"  placeholder="Telefone">
 						
+						<br><br>
+						<input class="input-large" type="text"  placeholder="CEP">					
+						
+						<input class="input-large" type="text"  placeholder="Cidade">					
+
 						<select class="input-small">
 							<option>UF</option>
 							<option>MG</option>
 							<option>RJ</option>
 							<option>SP</option>			  
 						</select>
-						<br><br>
-						<input class="input-large" type="text"  placeholder="CEP">					
-						
-						<input class="input-large" type="text"  placeholder="Cidade">
-
-						<input class="input-small" type="text"  placeholder="Telefone">
 
 			</div>
 			</div>			

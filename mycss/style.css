@@ -179,9 +179,10 @@
 			border-radius: 5px;
 		}	
 		
-		#buscando_emp form{
+		#buscando_emp_form{
 			position: absolute;
-			right: 100px;	
+			right: 10px;
+			top: 10px;	
 		}
 
 		#buscando_emp h5{
@@ -246,9 +247,11 @@
 
 /*Tela LEMBRETE --->INICIO<---*/
 
+		#busca_lembre{position: absolute;top:160px;right:310px;}
+
 		#table_lembre{
 		position: absolute;
-		top:200px;
+		top:250px;
 		left:90px;
 		width:200px;
 		height: 350px;
@@ -259,7 +262,7 @@
 
 		#novo_lem_btn{
 			position: absolute;
-			top: 570px;
+			top: 200px;
 			left:120px;
 		}
 
@@ -268,7 +271,7 @@
 		top:200px;
 		left:350px;
 		width:700px;
-		height: 550px;
+		height: 500px;
 		border-width:2px;
 		border-style:solid;
 		border-color:#00afef;
@@ -322,9 +325,6 @@
 			right: 0px;
 		}
 
-
-
-
 /*Tela ATIVIDADES --->INICIO<---*/
 
 	#txt_atividades{position: absolute;top:160px;left:370px;}
@@ -343,12 +343,14 @@
 		border-radius: 5px;
 	}		
 
+	#txt_new_ativi{position: absolute;top:160px;left:20px;}
+
 	#add_atividades{
 		position: absolute;
-		top: 170px;
+		top: 230px;
 		left:20px;
 		width: 290px;
-		height: 480px;
+		height: 370px;
 		background:#00afef;
 		text-align:center;
 		border-radius:5px;}
@@ -356,7 +358,7 @@
 	#btn_atividades{
 		position: absolute;
 		top: 100%;
-		right: 300px;
+		left: 370px;
 	}
 
 /*Tela ATENDIMENTOS --->INICIO<---*/
@@ -379,7 +381,7 @@
 
 	#add_atendimento{
 		position: absolute;
-		top: 170px;
+		top: 230px;
 		left:20px;
 		width: 290px;
 		height: 480px;
