@@ -77,18 +77,48 @@
 		<div id="novo_lem_btn">
 			<button class="btn btn-primary" type="submit" >Novo Lemrbete</button>
 		</div>
-
 		<div id="cad_lem">
-			<div id="form_cad_lemb">
-			<form class="form-inline">					
-					<input class="input-xxlarge" type="text"  placeholder="Titulo Lembrete">
-					<br><br>					
-					<input class="input-large" type="text"  placeholder="Data">					
-					<input class="input-large" type="text"  placeholder="Hora">
-					
-					<br><br>
-					<textarea rows="4" placeholder="Informação Lembrete" ></textarea>					
-				</form>
+			<div id="cad_lemb_form">			
+				<form class="form-inline">					
+						<input class="input-large" type="text"  placeholder="Titulo Lembrete">
+						<br><br>					
+						<input class="input-large" type="text"  placeholder="Data">					
+						<input class="input-large" type="text"  placeholder="Hora">					
+						<br><br>
+						<textarea rows="4" placeholder="Informação Lembrete" ></textarea>				
+				</form>	
+			</div>
+			<div id="conv_txt"><h3>Convidados</h3></div>
+			<div id="add_conv">
+				<select class="input-large">
+					<option>Adicionar Participante</option>
+					<option>Masculino</option>
+					<option>Feminino</option>									  
+				</select>
+				<button class="btn btn-primary" type="submit" >+</button>
+			</div>
+			<div id="box_conv">				
+				<table class="table"> <!-- Inicia a tabela e coloca uma borda de espessura igual a 1-->	
+					<tr bgcolor="#00afef">
+						<td>Nome</td>
+						<td>Cargo</td>
+					</tr>			
+						
+					<tr> 
+						<td><input type="checkbox">&nbsp;&nbsp;Augusto</td>
+						<td>Gerente</td>					
+					<tr>
+					<tr> 
+						<td><input type="checkbox">&nbsp;&nbsp;Janaina</td>
+						<td>Nada</td>					
+					<tr>					
+				</table>
+				<div id="box_conv_btn">
+					<button class="btn btn-primary" type="submit" >Editar</button>
+					<button class="btn btn-primary" type="submit" >Cancelar</button>
+					<button class="btn btn-primary" type="submit" >Excluir</button>
+					<button class="btn btn-primary" type="submit" >Salvar</button>
+				</div>			
 			</div>
 		</div>
 
