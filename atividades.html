@@ -63,7 +63,7 @@
 		<div id="table_atividades">
 			<table class="table"> <!-- Inicia a tabela e coloca uma borda de espessura igual a 1-->
 					
-				<tr bgcolor="#00afef">
+				<tr bgcolor="#00afef">					
 					<td>Título </td>
 					<td>Horario</td>
 					<td>Descrição</td>
@@ -73,16 +73,15 @@
 				</tr>			
 					
 				<tr class="success"> 
+					<td><input type="checkbox">&nbsp;&nbsp;Reunião</td>
 					<td> </td>
-					<td> </td>
-					<td>Descrição.....................................</td>
-					
+					<td>Descrição</td>					
 					<td><button class="btn btn-small btn-primary" type="submit" >Editar</button></td>
 					<td><button class="btn btn-small btn-primary" type="submit" >Excluir</button></td> 					
 				<tr>
 					
 				<tr class="error"> 
-					<td> </td>
+					<td><input type="checkbox">&nbsp;&nbsp;Visita</td>
 					<td> </td>
 					<td>Descrição....</td>
 					<td><button class="btn btn-small btn-primary" type="submit" >Editar</button></td>
@@ -111,6 +110,11 @@
 				</form>
 			</div>			
 		</div>
+
+		<form id="btn_atividades">
+			<input type="checkbox">&nbsp;&nbsp; Selecionar Todos
+			<button class="btn btn-primary" type="submit" >Excluir Selecionados</button>			
+		</form>
 <!--
 		<form id="btn_atividades">
 			<button class="btn btn-primary" type="submit" >Editar</button>
