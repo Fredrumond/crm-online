@@ -30,9 +30,9 @@
 		border-radius:5px;
 	}
 
-	#user{position: absolute;top:40%;right:8%;}
+	#user{position: absolute;top:40%;right:190px;}
 
-	#logout{position:absolute;top:50%;right:5%;}	
+	#icon_conf{position:absolute;top:45%;right:130px;}
 
 /*NAVEGADOR --->INICIO<---*/
 
@@ -64,6 +64,7 @@
 	  color:#000000;
 	  text-decoration:none;
 	  padding:15px;
+	  z-index: 2;
 	}
 	/*.nav ul li a:hover{
 	  color:#DCDCDC;
@@ -72,13 +73,14 @@
 	  box-shadow: inset 0px -4px 0px 0px #F5F5F5;
 	}*/
 
-	.nav ul > li > ul{visibility: hidden;position: absolute;}
+	.nav ul > li > ul{visibility: hidden;position: absolute;z-index: 2;}
 
 	.nav ul > li:hover > ul{
 				
 				visibility: visible;
 				text-align: left;
 				background: #00afef;
+				z-index: 2;
 			}
 
 /*Tela LOGIN --->INICIO<---*/
