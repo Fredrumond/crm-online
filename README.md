@@ -1,4 +1,15 @@
-crm-online
+#CRM ONLINE - LABORATORIO DE DESENVOLVIMENTO DE SISTEMAS
 ==========
 
-CRM ONLINE - LABORATORIO
+#Descrição Geral
+Nos dias atuais, a maioria das organizações (empresas) busca gerenciar suas interações com os clientes. Nesse gerenciamento ocorre o controle de atividades como, por exemplo, contatos telefônicos, visitas (i.e., reuniões) e vendas. Nesse processo, cada cliente possui um vendedor responsável, que pode ser alterado ou não ao longo do tempo. Além disso, um cliente pode ser acionado por outros funcionários da empresa, dependendo de uma determinada atividade.
+Diante dessa percepção você foi contratado para participar do desenvolvimento de um CRM Online, um produto que será oferecido para empresas interessadas no gerenciamento de interações com clientes.
+Um Customer Relationship Management (CRM) é um modelo amplamente utilizado para gerenciamento das interações da empresa com clientes e perspectivas de vendas. Trata-se de usar a tecnologia para organizar, automatizar e sincronizar atividades, processos de negócios (principalmente de vendas) e também as atividades de marketing, atendimento ao cliente e suporte técnico.
+O CRM online a ser desenvolvido pela sua equipe deverá oferecer o serviço de controle das informações e atividades de relacionamentos com os clientes (como ligações, visitas, reuniões e fechamento de pedido).
+Qualquer pessoa pode se cadastrar como usuário do sistema e solicitar o vinculo como o funcionário de uma empresa. O usuário que efetuar o cadastro de uma empresa (pela primeira vez), automaticamente receberá o “papel” de Proprietário da respectiva empresa no sistema. Posteriormente, esse Proprietário pode atribuir papel de Administrador para outros funcionários que atuam na empresa.
+Usuários que não possuem perfil de Proprietário ou Administrador serão considerados como “Funcionários Comuns” no sistema. Porém, eles só poderão ser efetivamente vinculados à empresa, mediante a aprovação do Proprietário ou Administradores.
+Em relação aos Clientes, o sistema deverá prover a gestão de todas as informações vinculadas aos clientes e as respectivas pessoas de contatos. Cada cliente deve ter um vendedor responsável, sendo que, se esse for alterado, o sistema deverá manter um histórico. Qualquer funcionário da empresa pode gerir o cadastro de clientes.
+As atividades (e.g., reuniões, visitas) dos funcionários da empresa com o cliente devem ser registradas e geridas através do sistema CRM Online. O sistema deve prover a possibilidade de convidar funcionários para participarem das atividades cadastradas. A notificação do convite também deverá ser enviada por e-mail. O funcionário convidado poderá aceitar ou rejeitar o convite, através do e-mail recebido ou da interface do CRM Online. Além disso, deve ser permitido o agendamento de lembretes aos usuários envolvidos. O usuário poderá configurar as informações sobre o dia e horário do lembrete e o sistema deverá notificá-lo conforme configuração.
+
+#Limitações
+Os Clientes das empresas que adotarem o CRM Online não são considerados usuários/atores desse sistema. Em outras palavras, os Clientes não acessam o CRM Online.
