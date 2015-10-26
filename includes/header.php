@@ -1,3 +1,24 @@
+<?php
+require_once"conexao.php";
+
+
+	session_start(); 
+    if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)) { 
+        unset($_SESSION['email']); 
+        unset($_SESSION['senha']); 
+        session_destroy();
+        header('location:../index.php'); 
+    } 
+
+   if ($_SESSION['tipo_usu'] != "A") {
+    	#header('location:../../lembretes.php');
+    }
+
+    $id_usu = $_SESSION['id_usu'];
+    $nome_usu = $_SESSION['nome_usu'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,7 +61,8 @@
 	<title><?php print $cabecalho_title; ?></title>
 </head>
 <body>
-	<header>				
+	<header>
+	<?php echo $nome_usu;?>				
 		<div id="logo_small"><img src="imagens/logo2.png"></div>			
 	</header>	
 	

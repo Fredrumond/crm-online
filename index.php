@@ -84,16 +84,16 @@
   <body>
 	<div id="logo_login"><img src="imagens/logo2.png"></div>
   	<div id="box_login">
-		<form class="form-horizontal">
+		<form class="form-horizontal" method="POST" action="includes/login.php" >
 			  <div class="control-group">			    
 			    <div class="controls">
-			      <input class="input-xlarge" type="text" id="inputEmail" placeholder="Email">
+			      <input class="input-xlarge" type="text" name="email" id="email" placeholder="Email">
 			    </div>
 			  </div>
 			  <div class="control-group">
 			    
 			  <div class="controls">
-			  	<input class="input-xlarge" type="password" id="inputPassword" placeholder="Senha">
+			  	<input class="input-xlarge" type="password" name="senha" id="senha" placeholder="Senha">
 			  	<input type="checkbox"> Manter-se conectado
 			  </div>
 				
