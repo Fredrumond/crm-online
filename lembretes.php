@@ -12,10 +12,20 @@
 		<table class="table"> <!-- Inicia a tabela e coloca uma borda de espessura igual a 1-->					
 			<tr bgcolor="#00afef">
 				<td>Lembretes</td>
-			</tr>					
-			<tr> 
-				<td><input type="radio">&nbsp;&nbsp;LEMBRETE 1</td>					
-			<tr>
+			</tr>
+			<?php
+		      $query = "SELECT * FROM lembrete ORDER BY data_lem DESC "; /*asc*/
+		      $result = DBExecute($query); 
+		      $linha = mysqli_num_rows($result);
+		      while ($row = mysqli_fetch_array($result)) 
+		      {        
+		    ?>
+		      <tr>
+		        <td><?php echo $row['nom_lem']?></td>		        
+		      </tr>
+		    <?php 
+		      }
+		    ?>
 		</table>
 	</div>	
 		
@@ -25,14 +35,14 @@
 	
 	<div id="cad_lem">
 		<div id="cad_lemb_form">			
-			<form class="form-inline">					
-				<input class="input-large" type="text"  placeholder="Titulo Lembrete"><span>*</span>
+			<form class="form-inline" method="POST" action="acoes/inserir_lembrete.php">					
+				<input class="input-large" type="text" id="tit_lem" name="tit_lem"  placeholder="Titulo Lembrete"><span>*</span>
 				<br><br>					
-				<input class="input-large" type="text"  placeholder="Data"><span>*</span>					
-				<input class="input-large" type="text"  placeholder="Hora"><span>*</span>				
+				<input class="input-large" type="date" id="dat_lem" name="dat_lem"  placeholder="Data"><span>*</span>					
+				<input class="input-large" type="time" id="hor_lem" name="hor_lem"  placeholder="Hora"><span>*</span>				
 				<br><br>
-				<textarea rows="4" placeholder="Informação Lembrete"></textarea><span>*</span>				
-			</form>	
+				<textarea rows="4" id="inf_lem" name="inf_lem" placeholder="Informação Lembrete"></textarea><span>*</span>				
+			
 		</div>
 
 		<div id="conv_txt"><h3>Convidados</h3></div>
@@ -58,7 +68,8 @@
 					<button class="btn btn-primary" type="submit" >Editar</button>
 					<button class="btn btn-primary" type="submit" >Cancelar</button>
 					<button class="btn btn-primary" type="submit" >Excluir</button>
-				</div>			
+				</div>
+				</form>				
 			</div>
 		</div>
 		
