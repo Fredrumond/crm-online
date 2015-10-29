@@ -7,10 +7,6 @@ $data = DBEscape($_POST['dat_lem']);
 $hora = DBEscape($_POST['hor_lem']);
 $info = DBEscape($_POST['inf_lem']);
 
-/*echo $titulo;
-echo $data;
-echo $hora;
-echo $info;*/
 
 $query = "INSERT INTO lembrete(nom_lem,data_lem,hora_lem,inf_lem) VALUES ('$titulo','$data','$hora','$info');";
 DBExecute($query);

@@ -20,22 +20,23 @@
 					<td></td>
 					
 				</tr>			
-					
-				<tr class="success"> 
-					<td><input type="checkbox">&nbsp;&nbsp;Reunião</td>
-					<td> </td>
-					<td>Descrição</td>					
-					<td><button class="btn btn-small btn-primary" type="submit" >Editar</button></td>
-					<td><button class="btn btn-small btn-primary" type="submit" >Excluir</button></td> 					
-				<tr>
-					
-				<tr class="error"> 
-					<td><input type="checkbox">&nbsp;&nbsp;Visita</td>
-					<td> </td>
-					<td>Descrição....</td>
-					<td><button class="btn btn-small btn-primary" type="submit" >Editar</button></td>
-					<td><button class="btn btn-small btn-primary" type="submit" >Excluir</button></td>
-				<tr>
+				<?php
+			      $query = "SELECT * FROM atividade ORDER BY data_atv DESC "; /*asc*/
+			      $result = DBExecute($query); 
+			      $linha = mysqli_num_rows($result);
+			      while ($row = mysqli_fetch_array($result)) 
+			      {        
+			    ?>
+			      <tr>
+			        <td><?php echo $row['nom_atv']?></td>
+			        <td><?php echo $row['hora_atv']?></td>
+			        <td><?php echo $row['inf_atv']?></td>
+			        <td><button class="btn btn-small btn-primary" type="submit" >Editar</button></td>
+					<td><button class="btn btn-small btn-primary" type="submit" >Excluir</button></td> 		        
+			      </tr>
+			    <?php 
+			      }
+			    ?>				
 			</table>
 		</div>
 		
@@ -43,18 +44,18 @@
 		<div id="add_atividades">
 			<h3>Nova Atividade</h3>
 			
-			<div id="formulario">
-				<form class="form-inline">					
-					<input class="input-large" type="text"  placeholder="Titulo"><span>*</span>
+			<div id="formulario" >
+				<form class="form-inline" method="POST" action="acoes/inserir_atividade.php">					
+					<input class="input-large" type="text" id="tit_atv" name="tit_atv"  placeholder="Titulo"><span>*</span>
 					<br><br>					
-					<input class="input-large" type="text"  placeholder="Data"><span>*</span>
+					<input class="input-large" type="date" id="dat_atv" name="dat_atv"  placeholder="Data"><span>*</span>
 					<br><br>
-					<input class="input-large" type="text"  placeholder="Horario"><span>*</span>
+					<input class="input-large" type="time" id="hor_atv" name="hor_atv"  placeholder="Horario"><span>*</span>
 					
 					<br><br>
-					<textarea rows="4" placeholder="Informação sobre o atendimento" ></textarea><span>*</span>
+					<textarea rows="4" id="inf_lem" name="inf_atv" placeholder="Informação sobre o atendimento" ></textarea><span>*</span>
 					<br><br>
-					<button class="btn btn-primary" type="submit" >Limpar</button>					
+					<!--<button class="btn btn-primary" type="submit" >Limpar</button>-->					
 					<button class="btn btn-primary" type="submit" >Salvar</button>
 				</form>
 			</div>			
