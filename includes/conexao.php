@@ -1,7 +1,7 @@
 <?php
   //Abre conexão com o MySql
   function DBConnect(){
-    $link = @mysqli_connect("localhost", "root", "", "easy_crm");
+    $link = @mysqli_connect("localhost", "root", "vagrant", "easy_crm");
     $link->set_charset('utf8');
     return $link;
   }
