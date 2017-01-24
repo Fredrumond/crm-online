@@ -118,13 +118,13 @@
                 <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bell"></i> Lembretes</a>
+                <a href="lembrete.php"><i class="fa fa-bell"></i> Lembretes</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-calendar"></i> Atividades</a>
+                <a href="atividade.php"><i class="fa fa-calendar"></i> Atividades</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-phone"></i> Atendimento</a>
+                <a href="atendimento.php"><i class="fa fa-phone"></i> Atendimento</a>
             </li>
             <li>
                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-check"></i> Cadastro <i class="fa fa-fw fa-caret-down pull-right"></i></a>
