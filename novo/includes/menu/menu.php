@@ -114,18 +114,18 @@
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
-            <li class="active">
-                <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-            </li>
-            <li>
-                <a href="lembrete.php"><i class="fa fa-bell"></i> Lembretes</a>
-            </li>
-            <li>
-                <a href="atividade.php"><i class="fa fa-calendar"></i> Atividades</a>
-            </li>
-            <li>
-                <a href="atendimento.php"><i class="fa fa-phone"></i> Atendimento</a>
-            </li>
+          <?php
+            $read = new Read();
+            $read->ExeRead('menu');
+            foreach ($read->getResult() as $value):
+              extract($value);
+          ?>
+          <li>
+              <a href="<?=$pagina?>"><i class="<?=$icone?>"></i> <?=$nome?></a>
+          </li>
+          <?php
+             endforeach
+           ?>
             <li>
                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-check"></i> Cadastro <i class="fa fa-fw fa-caret-down pull-right"></i></a>
                 <ul id="demo" class="collapse">
