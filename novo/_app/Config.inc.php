@@ -11,7 +11,7 @@ define('DBSA','easy_crm');
 
   function __autoload($Class){
 
-      $cDir = ['Conn','Helpers'];
+      $cDir = ['Conn','Helpers','Classes'];
       $iDir = null;
 
       foreach ($cDir as $dirName):
