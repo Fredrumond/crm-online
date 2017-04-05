@@ -8,8 +8,11 @@
 
 <!-- Morris Charts JavaScript -->
 <script src="libs/js/plugins/morris/raphael.min.js"></script>
-<script src="libs/js/plugins/morris/morris.min.js"></script>
-<script src="libs/js/plugins/morris/morris-data.js"></script>
+<!-- <script src="libs/js/plugins/morris/morris.min.js"></script> -->
+<!-- <script src="libs/js/plugins/morris/morris-data.js"></script> -->
 
 <!-- Meu JavaScript -->
 <script src="libs/js/myjs/pages/entrada/script.js"></script>
+
+<!-- Jquery UI -->
+<script src="libs/js/jquery-ui/jquery-ui.js"></script>

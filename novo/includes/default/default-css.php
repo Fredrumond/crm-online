@@ -10,3 +10,5 @@
 <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <!-- My Css -->
 <link rel="stylesheet" type="text/css" href="libs/css/mycss/style.css">
+<!-- Jquery UI -->
+<link rel="stylesheet" type="text/css" href="libs/js/jquery-ui/jquery-ui.css">
