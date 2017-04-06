@@ -13,15 +13,17 @@
           </div>
           <div class="form-group">
             <label for="">Data</label>
-            <input type="text" class="form-control" id="data" name="data" >
+            <input type="text" class="form-control" id="datepicker" name="data" >
           </div>
           <div class="form-group">
             <label for="">Horario</label>
-            <input type="text" class="form-control" id="horario" name="horario">
+            <input type="text" class="form-control time" id="horario" name="horario" >
           </div>
           <div class="form-group">
             <label for="">Descrição</label>
             <textarea class="form-control" rows="5" id="descricao" name="descricao"></textarea>
+            Caracteres restantes:
+            <span class="contagem">140</span>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>

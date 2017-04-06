@@ -16,3 +16,6 @@
 
 <!-- Jquery UI -->
 <script src="libs/js/jquery-ui/jquery-ui.js"></script>
+
+<!-- Jquery UI -->
+<script src="libs/js/jquery.mask.min.js"></script>
