@@ -1,6 +1,7 @@
 $(document).ready(function(){
   //chamar mascara de tempo
   $('.time').mask('00:00:00');
+  loadTeams();
 });
 
 
@@ -41,4 +42,27 @@ $(function(){
       $(".contagem").text(disponivel);
     });
 
-    
+    //CARREGA O HISTORICO COM TODOS OS TIMES
+function loadTeams(){
+		$.ajax({
+			type:"GET",
+			url:"modulos/agenda/model/seleciona_todos_eventos.php",
+			dataType: 'json'
+		}).done(function(data){
+			console.log(data);
+      data.eventos.forEach(function(evento){
+        $(".container-teams").append(createElement(evento.titulo,evento.data,evento.horario));
+      })
+		});
+	}
+
+	function createElement(pontos,data,horario){
+	    // return '<div class="team">'+ '<h1>'+ pontos + '</h1>'
+      //
+			// 														+'</div>';
+      return '<tr><td>' + pontos + '</td>'+
+                 '<td>'+ data +'</td>' +
+                 '<td>'+ horario + '</td>'+
+                 '<td><a href="#">Visualizar</a><a href="#">Editar</a><a href="#">Remover</a></td>'+
+                 '</tr>';
+	}

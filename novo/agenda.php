@@ -5,6 +5,9 @@
   $subtitulo = '';
 ?>
 
+<h1>Ranking</h1>
+<div class="row-fluid "> </div>
+
 <div class="row">
 	<div class="col-lg-12">
 			<h2>Eventos</h2>
@@ -22,13 +25,8 @@
 											<th>Ações</th>
 									</tr>
 							</thead>
-							<tbody>
-									<tr class="active">
-											<td>Teste</td>
-											<td>05/04/2017</td>
-											<td>08:00</td>
-											<td></td>
-									</tr>
+							<tbody class="container-teams">
+									
 							</tbody>
 					</table>
 			</div>
