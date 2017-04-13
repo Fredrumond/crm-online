@@ -10,7 +10,7 @@
 			<h2>Eventos</h2>
 			<div class="pull-right" style="margin-top: -4rem;">
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#novo-evento">Novo Evento</button>
-				<?php include "view/agenda/modal-evento.php"; ?>
+				<?php include "modulos/agenda/view/modal-evento.php"; ?>
 			</div>
 			<div class="table-responsive">
 					<table class="table table-bordered table-hover table-striped">
@@ -39,47 +39,5 @@
 	ob_end_clean();
 	include('base.php');
 ?>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.time').mask('00:00:00');
-  });
-
-  $(function(){
-			 $.datepicker.regional['pt-BR'] = {
-			  closeText: 'Fechar',
-			  prevText: '&#x3c;Anterior',
-			  nextText: 'Pr&oacute;ximo&#x3e;',
-			  currentText: 'Hoje',
-			  monthNames: ['Janeiro','Fevereiro','Mar&ccedil;o','Abril','Maio','Junho',
-			  'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-			  monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun',
-			  'Jul','Ago','Set','Out','Nov','Dez'],
-			  dayNames: ['Domingo','Segunda-feira','Ter&ccedil;a-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sabado'],
-			  dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
-			  dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
-			  weekHeader: 'Sm',
-			  dateFormat: 'dd/mm/yy',
-			  firstDay: 0,
-			  isRTL: false,
-			  showMonthAfterYear: false,
-			  yearSuffix: ''};
-			 $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
-			});
-
-      $( "#datepicker" ).datepicker( $.datepicker.regional[ "pt-BR" ]);
-
-      //LIMITAR CARACTERES
-      $("#descricao").bind("input keyup paste",function(){
-        var maximo = 140;
-        var disponivel = maximo - $(this).val().length;
-        if(disponivel < 0 ){
-          var texto = $(this).val().substr(0,maximo);
-          $(this).val(texto);
-          disponivel = 0;
-        }
-        $(".contagem").text(disponivel);
-      });
-
-
-
-</script>
+<link href="modulos/agenda/css/agenda.css" rel="stylesheet">
+<script type="text/javascript" src="modulos/agenda/js/agenda.js"></script>
