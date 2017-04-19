@@ -5,9 +5,6 @@
   $subtitulo = '';
 ?>
 
-<h1>Ranking</h1>
-<div class="row-fluid "> </div>
-
 <div class="row">
 	<div class="col-lg-12">
 			<h2>Eventos</h2>
@@ -26,9 +23,10 @@
 									</tr>
 							</thead>
 							<tbody class="container-teams">
-									
+
 							</tbody>
 					</table>
+					<?php include "modulos/agenda/view/modal-visualizar-evento.php"; ?>
 			</div>
 </div>
 

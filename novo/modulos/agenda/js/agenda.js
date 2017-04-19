@@ -1,7 +1,8 @@
 $(document).ready(function(){
   //chamar mascara de tempo
   $('.time').mask('00:00:00');
-  loadTeams();
+  //carrega todos os eventos
+  carregaEventos();
 });
 
 
@@ -42,27 +43,50 @@ $(function(){
       $(".contagem").text(disponivel);
     });
 
-    //CARREGA O HISTORICO COM TODOS OS TIMES
-function loadTeams(){
-		$.ajax({
-			type:"GET",
-			url:"modulos/agenda/model/seleciona_todos_eventos.php",
-			dataType: 'json'
-		}).done(function(data){
-			console.log(data);
-      data.eventos.forEach(function(evento){
-        $(".container-teams").append(createElement(evento.titulo,evento.data,evento.horario));
-      })
-		});
-	}
+    //CARREGA TODOS OS EVENTOS
+    function carregaEventos(){
+    		$.ajax({
+    			type:"GET",
+    			url:"modulos/agenda/model/seleciona_todos_eventos.php",
+    			dataType: 'json'
+    		}).done(function(data){
+    			console.log(data);
+          data.eventos.forEach(function(evento){
+            $(".container-teams").append(createElement(evento.id,evento.titulo,evento.data,evento.horario));
+          })
+    		});
+    	}
+  //ADICIONA ELEMENTOS NA TABELA
+	function createElement(id,pontos,data,horario){
+    var visualizar = '<span class="acoes-tabela"><a href="" data-toggle="modal" data-target="#visualizar-evento" onclick="setaDadosModal('+id+')"><i class="fa fa-list-alt" aria-hidden="true"></i></a></span>';
+    var editar     = '<span class="acoes-tabela"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></span>';
+    var excluir    = '<span class="acoes-tabela"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></span>';
 
-	function createElement(pontos,data,horario){
-	    // return '<div class="team">'+ '<h1>'+ pontos + '</h1>'
-      //
-			// 														+'</div>';
       return '<tr><td>' + pontos + '</td>'+
                  '<td>'+ data +'</td>' +
                  '<td>'+ horario + '</td>'+
-                 '<td><a href="#">Visualizar</a><a href="#">Editar</a><a href="#">Remover</a></td>'+
+                 '<td>'+ visualizar + editar + excluir +'</td>'+
                  '</tr>';
 	}
+
+  function setaDadosModal(id) {
+    $('#campo').val(id);
+    retornaEvento(id);
+  }
+  function retornaEvento(id){
+    $.ajax({
+      type:"GET",
+      url:"modulos/agenda/model/seleciona_evento.php?id="+id,
+      dataType: 'json'
+    }).done(function(data){
+      console.log(data);
+      data.evento.forEach(function(evento){
+        $('.titulo-evento').html(evento.titulo);
+        $('.data-evento').html(evento.data);
+        $('.horario-evento').html(evento.horario);
+        $('.descricao-evento').html(evento.descricao);
+
+      })
+
+    });
+  }
