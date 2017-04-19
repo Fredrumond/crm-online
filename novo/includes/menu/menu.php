@@ -116,7 +116,7 @@
         <ul class="nav navbar-nav side-nav">
           <?php
             $read = new Read();
-            $read->ExeRead('menu');
+            $read->ExeRead('menu','WHERE status = :status ', "status=1");
             foreach ($read->getResult() as $value):
               extract($value);
           ?>
