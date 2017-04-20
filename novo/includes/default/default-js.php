@@ -12,7 +12,7 @@
 <!-- <script src="libs/js/plugins/morris/morris-data.js"></script> -->
 
 <!-- Meu JavaScript -->
-<script src="libs/js/myjs/pages/entrada/script.js"></script>
+<script src="libs/js/myjs/script.js"></script>
 
 <!-- Jquery UI -->
 <script src="libs/js/jquery-ui/jquery-ui.js"></script>

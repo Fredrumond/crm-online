@@ -7,6 +7,9 @@
 
 <div class="row">
 	<div class="col-lg-12">
+		<div class="testetabela">
+
+		</div>
 			<h2>Eventos</h2>
 			<div class="pull-right" style="margin-top: -4rem;">
 				<button type="button" class="btn btn-success" data-toggle="modal" data-target="#novo-evento">Novo Evento</button>
@@ -27,6 +30,7 @@
 							</tbody>
 					</table>
 					<?php include "modulos/agenda/view/modal-visualizar-evento.php"; ?>
+					<?php include "modulos/agenda/view/modal-editar-evento.php"; ?>
 			</div>
 </div>
 

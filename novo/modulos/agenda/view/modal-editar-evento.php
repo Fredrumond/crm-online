@@ -1,4 +1,4 @@
-<div class="modal fade" id="novo-evento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="editar-evento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,19 +9,19 @@
         <form class="" action="modulos/agenda/controller/adicionar-evento.php" method="post">
           <div class="form-group">
             <label for="">Titulo</label>
-            <input type="text" class="form-control" id="titulo" name="titulo" >
+            <input type="text" class="form-control titulo-evento" id="titulo" name="titulo" >
           </div>
           <div class="form-group">
             <label for="">Data</label>
-            <input type="text" class="form-control datepicker" name="data" >
+            <input type="text" class="form-control data-evento datepicker" name="data" >
           </div>
           <div class="form-group">
             <label for="">Horario</label>
-            <input type="text" class="form-control time" id="horario" name="horario" >
+            <input type="text" class="form-control time horario-evento" id="horario" name="horario" >
           </div>
           <div class="form-group">
             <label for="">Descrição</label>
-            <textarea class="form-control" rows="5" id="descricao" name="descricao"></textarea>
+            <textarea class="form-control descricao-evento" rows="5" id="descricao" name="descricao"></textarea>
             Caracteres restantes:
             <span class="contagem">140</span>
           </div>
