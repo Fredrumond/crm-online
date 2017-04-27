@@ -12,16 +12,18 @@ try {
   $horario = $_POST['horario'];
   $data = $dataEvento;
   $descricao = $_POST['descricao'];
+  $local = $_POST['local'];
   $data_cadastro = date('Y-m-d H:i:s');
 
-  // $titulo = 'teste';
-  // $horario = 'teste';
-  // $data = 'teste';
-  // $descricao = 'teste';
-  // $data_cadastro = date('Y-m-d H:i:s');
-
-  $evento = new Agenda($titulo,$horario,$data,$descricao,$data_cadastro);
+  $evento = new Agenda($titulo,$horario,$data,$descricao,$local,$data_cadastro);
   $evento->adicionarEvento($evento);
+  $id =  $evento->getResult();
+
+  //VERIFICA SE TEM CONVIDADOS PARA INSERIR NA LISTA
+
+  if (isset($_POST['lista-convidados']) && $_POST['lista-convidados'] != '') {
+    $evento->adicionaConvidados($_POST['lista-convidados'],$id);
+  }
 
 
 } catch (Exception $e) {
@@ -29,8 +31,5 @@ try {
 }
 
 header('Location: ../../../agenda.php');
-
-
-
 
  ?>

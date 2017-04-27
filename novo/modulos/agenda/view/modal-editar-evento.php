@@ -6,7 +6,8 @@
         <h4 class="modal-title" id="myModalLabel">Adicionar Evento</h4>
       </div>
       <div class="modal-body">
-        <form class="" action="modulos/agenda/controller/adicionar-evento.php" method="post">
+        <form class="" action="modulos/agenda/controller/editar-evento.php" method="post">
+          <input type="hidden" name="id-evento" value="id-evento" class="id-evento">
           <div class="form-group">
             <label for="">Titulo</label>
             <input type="text" class="form-control titulo-evento" id="titulo" name="titulo" >
@@ -18,6 +19,10 @@
           <div class="form-group">
             <label for="">Horario</label>
             <input type="text" class="form-control time horario-evento" id="horario" name="horario" >
+          </div>
+          <div class="form-group">
+            <label for="">Local</label>
+            <input type="text" class="form-control time local-evento" id="local" name="local" >
           </div>
           <div class="form-group">
             <label for="">Descrição</label>

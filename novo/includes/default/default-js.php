@@ -19,3 +19,6 @@
 
 <!-- Jquery UI -->
 <script src="libs/js/jquery.mask.min.js"></script>
+
+<!-- Jquery UI -->
+<script src="libs/js/bootstrap-multiselect.js"></script>

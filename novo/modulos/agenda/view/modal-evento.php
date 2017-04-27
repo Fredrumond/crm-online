@@ -20,10 +20,25 @@
             <input type="text" class="form-control time" id="horario" name="horario" >
           </div>
           <div class="form-group">
+            <label for="">Local</label>
+            <input type="text" class="form-control" id="local" name="local" >
+          </div>
+          <div class="form-group">
             <label for="">Descrição</label>
             <textarea class="form-control" rows="5" id="descricao" name="descricao"></textarea>
             Caracteres restantes:
             <span class="contagem">140</span>
+          </div>
+          <div class="form-group">
+            <label for="">Lista de Convidados</label><br>
+            <select id="lista-convidados" name="lista-convidados[]" multiple="multiple">
+              <option value="1">Jose</option>
+              <option value="2">Maria</option>
+              <option value="3">Fernando</option>
+              <option value="4">Marcos</option>
+              <option value="5">Renata</option>
+              <option value="6">Camila</option>
+          </select>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>

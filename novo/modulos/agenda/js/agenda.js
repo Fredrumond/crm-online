@@ -4,6 +4,8 @@ $(document).ready(function(){
 
   //carrega todos os eventos
   carregaEventos();
+
+  $('#lista-convidados').multiselect();
 });
 
 //LIMITAR CARACTERES
@@ -64,14 +66,17 @@ function retornaEvento(id,flag){
         $('.titulo-evento').html(evento.titulo);
         $('.data-evento').html(evento.data);
         $('.horario-evento').html(evento.horario);
+        $('.local-evento').html(evento.local);
         $('.descricao-evento').html(evento.descricao);
       })
       break;
       case 2:
       data.evento.forEach(function(evento){
+        $('.id-evento').val(id);
         $('.titulo-evento').val(evento.titulo);
         $('.data-evento').val(evento.data);
         $('.horario-evento').val(evento.horario);
+        $('.local-evento').val(evento.local);
         $('.descricao-evento').val(evento.descricao);
       })
       break;

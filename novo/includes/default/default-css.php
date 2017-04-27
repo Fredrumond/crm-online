@@ -12,3 +12,5 @@
 <link rel="stylesheet" type="text/css" href="libs/css/mycss/style.css">
 <!-- Jquery UI -->
 <link rel="stylesheet" type="text/css" href="libs/js/jquery-ui/jquery-ui.css">
+<!-- Jquery UI -->
+<link rel="stylesheet" type="text/css" href="libs/css/bootstrap-multiselect.css">

@@ -20,8 +20,12 @@
             <span class="horario-evento"></span>
           </div>
           <div class="form-group">
+            <label for="">Local</label><br>
+            <span class="local-evento"></span>
+          </div>
+          <div class="form-group">
             <label for="">Descrição</label><br>
-            <span class="descricao-evento"></span>          
+            <span class="descricao-evento"></span>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
