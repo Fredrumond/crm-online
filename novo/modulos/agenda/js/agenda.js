@@ -38,9 +38,10 @@ function createElement(id,titulo,data,horario){
 
   var flagVisualizar = 1;
   var flagEditar = 2;
+  var flagExcluir = 3;
   var visualizar = '<span class="acoes-tabela"><a href="" data-toggle="modal" data-target="#visualizar-evento" onclick="retornaEvento('+id+','+flagVisualizar+')"><i class="fa fa-list-alt" aria-hidden="true"></i></a></span>';
   var editar     = '<span class="acoes-tabela"><a href="" data-toggle="modal" data-target="#editar-evento" onclick="retornaEvento('+id+','+flagEditar+')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></span>';
-  var excluir    = '<span class="acoes-tabela"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></span>';
+  var excluir    = '<span class="acoes-tabela"><a href="" data-toggle="modal" data-target="#excluir-evento" onclick="retornaEvento('+id+','+flagExcluir+')"<i class="fa fa-times" aria-hidden="true"></i></a></span>';
 
   var newRow = $("<tr>");
   var cols = "";
@@ -78,6 +79,11 @@ function retornaEvento(id,flag){
         $('.horario-evento').val(evento.horario);
         $('.local-evento').val(evento.local);
         $('.descricao-evento').val(evento.descricao);
+      })
+      break;
+      case 3:
+      data.evento.forEach(function(evento){
+        $('.id-evento').val(id);
       })
       break;
     }

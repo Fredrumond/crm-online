@@ -31,6 +31,7 @@
 					</table>
 					<?php include "modulos/agenda/view/modal-visualizar-evento.php"; ?>
 					<?php include "modulos/agenda/view/modal-editar-evento.php"; ?>
+					<?php include "modulos/agenda/view/modal-excluir-evento.php"; ?>
 			</div>
 </div>
 
