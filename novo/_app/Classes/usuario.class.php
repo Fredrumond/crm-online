@@ -58,6 +58,10 @@ class Usuario {
       ];
       $create->ExeCreate('usuario', $ArrDadosUsuario);
   }
+  public function editarUsuario($id,$ArrUpdate){
+        $update = new Update();
+        $update->ExeUpdate('usuario', $ArrUpdate, "WHERE id = :id", 'id=' . $id);
+    }
 
 
 }

@@ -27,9 +27,9 @@
 
 							</tbody>
 					</table>
-					<?php include "modulos/agenda/view/modal-visualizar-evento.php"; ?>
-					<?php include "modulos/agenda/view/modal-editar-evento.php"; ?>
-					<?php include "modulos/agenda/view/modal-excluir-evento.php"; ?>
+					<?php include "modulos/usuario/view/modal-visualizar-usuario.php"; ?>
+					<?php include "modulos/usuario/view/modal-editar-usuario.php"; ?>
+					<?php include "modulos/usuario/view/modal-excluir-usuario.php"; ?>
 			</div>
 </div>
 
