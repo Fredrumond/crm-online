@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //CONFIGURAÇOES DO SITE ####################
 define('HOST','127.0.0.1');
 define('USER','root');
