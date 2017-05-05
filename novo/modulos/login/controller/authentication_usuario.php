@@ -3,7 +3,7 @@
  * Autenticação de Usuário
  */
 include "../../../_app/Config.inc.php";
-
+session_destroy();
 try {
 
     // Verifica dados de login
@@ -13,7 +13,7 @@ try {
        $read = new Read();
        $read->fullRead("SELECT * FROM usuario WHERE senha = :senha AND email = :email","email={$_POST['usuario']}&senha={$_POST['senha']}");
        $retConf = $read->getResult();
-       var_dump($retConf = $read->getResult());
+       //var_dump($retConf = $read->getResult());
        //$res = Doctrine_Core::getTable('Cliente')->findOneByEmailAndSenha($_POST['usuario'],$_POST['senha']);
 
        // Verifica se o grupo está ativo autenticação
@@ -30,7 +30,7 @@ try {
                        $_SESSION['site_return_message']       = false;
 
                        // Encaminhamento para a página principal
-                        header('Location: ../../../agenda.php');
+                        header('Location: ../../../dashboard.php');
 
 
        } else {
@@ -38,7 +38,10 @@ try {
            // Tratamento de retorno
            $_SESSION['site_return_type']                               = 'error';
            $_SESSION['site_return_message']       = 'Acesso negado!';
-           header('Location: '.URL.'?erro=1');
+          //  print_r($_SESSION);
+          //  print_r($_POST);
+          //  die();
+           header('Location: ../../../index.php?erro=1');
 
        }
 

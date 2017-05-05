@@ -28,7 +28,19 @@
   <body>
 
     <div class="container">
+
         <div class="fundo-login">
+          <?php
+            if (isset($_GET['erro']) &&  $_GET['erro'] != 0) {
+          ?>
+          <div class="alert-index">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <i class="fa fa-times-circle sign "></i><span style="margin-left: 1rem;"><strong>Acesso negado!</strong></span>
+          </div>
+          <?php
+            }
+          ?>
+
             <form class="form-signin form-style" method="post" action="modulos/login/controller/authentication_usuario.php">
               <h2 class="form-signin-heading" style="color: #fff;font-size: 18px;">Acesso Restrito</h2>
               <div class="input-group">
@@ -59,17 +71,16 @@
      }
      .form-style{
        width: 39rem;
- position: absolute;
- top: 20%;
- left: 37%
+position: absolute;
+top: 26%;
+left: 37%;
      }
      .fundo-login{
        background: rgba(8, 8, 8, 0.46);
-height: 23rem;
-width: 53rem;
-margin-left: 32rem;
-
-margin-top: 12rem;
+     height: 27rem;
+     width: 53rem;
+     margin-left: 32rem;
+     margin-top: 12rem;
      }
      .input-group {
           margin-bottom: 15px;
@@ -80,5 +91,27 @@ margin-top: 12rem;
         display: table;
         border-collapse: separate;
     }
+    .alert-index {
+      /* background: red; */
+    /* width: 100%; */
+    height: 51px;
+    padding: 15px;
+    /* margin-bottom: 20px; */
+    border: 1px solid rgb(193, 189, 189);
+    border-radius: 4px;
+    background: rgba(233, 30, 30, 0.6);
+    color: #fff;
+}
 
 </style>
+<script src="libs/js/jquery.js"></script>
+<script type="text/javascript">
+  $('.close').click(function(){
+    $('.alert-index').css('display','none');
+  });
+
+
+
+
+
+  </script>
